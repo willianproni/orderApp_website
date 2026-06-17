@@ -45,12 +45,12 @@ export const GlobalStyles = createGlobalStyle`
     font-family: GeneralSans, sans-serif;
   }
   body {
-    background: #fafafa;
-    color: #333;
+    background: ${({ theme }) => theme.colors.gray[100]};
+    color: ${({ theme }) => theme.colors.gray[900]};
   }
   button {
     cursor: pointer;
     font-size: 1rem;
-    color: #333;
+    color: ${({ theme }) => theme.colors.gray[900]};
   }
 `;
